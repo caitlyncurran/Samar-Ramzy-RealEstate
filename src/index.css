@@ -1,0 +1,402 @@
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10rem;
+    align-items: center;
+  }
+
+  @media (max-width: 767.98px) {
+    .header {
+      padding: 0rem;
+    }
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  
+  /* Float the link section to the right */
+  .header-right {
+    display: flex;
+    gap: 5rem;
+    padding-right: 10rem;
+  }
+
+  @media (max-width: 767.98px) {
+    .header-right {
+      gap: 0rem;
+      padding-right: 1rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .hide {
+      display: none !important;
+    }
+  }
+
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+  .logo_img {
+    height: 5rem;
+  }
+
+  .footer {
+    padding: 4rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: 767.98px) {
+    .footer {
+      flex-direction: column;
+    }
+  }
+
+  .footer img {
+    height: 12rem;
+    float: left;
+    padding-left: 15rem;
+  }
+
+  @media (max-width: 767.98px) {
+    .footer img {
+      float: none;
+      padding: 0rem;
+    }
+  }
+
+  .footer-right {
+    float: right;
+    display: flex;
+    gap: 5rem;
+    padding-right: 15rem;
+  }
+
+  @media (max-width: 767.98px) {
+    .footer-right {
+      float: none;
+      padding: 0rem;
+    }
+  }
+
+  .break {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .footer a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: block; 
+    background-image: url("bernd-dittrich unsplash 02.png");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero {
+      height: 30vh;
+    }
+}
+
+.hero h1 {
+  position: absolute;
+  bottom: 0;
+  font-size: 5rem;
+  color: white;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 767.98px) {
+  .hero h1 {
+    font-size: 2.8rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.hero h2 {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 400;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 767.98px) {
+  .hero h2 {
+    font-size: 1rem;
+    padding-bottom: 0rem;
+    text-align: center;
+  }
+}
+
+.about-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  padding-top: 5rem;
+  gap: 10rem;
+}
+
+@media (max-width: 767.98px) {
+  .about-div {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+}
+
+.about-div img {
+  height: 500px;
+}
+
+@media (max-width: 767.98px) {
+  .about-div img {
+    height: 300px;
+  }
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 38%;
+}
+
+@media (max-width: 767.98px) {
+  .about-me {
+    width: 100%;
+  }
+}
+
+.about-div button {
+  width: 30%;
+}
+
+.about-div h2 {
+  font-size: 2.8rem;
+}
+
+.about-div p {
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 120%;
+}
+
+.contact-btn {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.2rem;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+}
+
+.outer-test {
+  height: 400px;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.testimonial {
+  background-color: #FAF5F6;    
+  width: 60%;
+  height: 85%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.test-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial p {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 767.98px) {
+  .testimonial {
+    width: 80%;
+  }
+  .testimonial p {
+    font-size: 1.5rem;
+  }
+}
+
+.hero2 {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: block; 
+  background-image: url("josh-wilburne unsplash.png");
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.hero2 h1 {
+  position: absolute;
+  bottom: 0;
+  font-size: 5rem;
+  color: white;
+}
+
+@media (max-width: 767.98px) {
+  .hero2 {
+    height: 30vh;
+  }
+
+  .hero2 h1 {
+    font-size: 2.8rem;
+  }
+}
+
+/* from web3forms vvvvvv */
+
+.contact-section {
+  width: 100%;
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .contact-section {
+    width: 80vw;
+    padding: 3rem 0rem;
+  }
+}
+
+.contact-intro > * + * {
+  margin-top: 1rem;
+}
+
+.contact-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.contact-description {
+  color: rgb(107 114 128);
+  font-size: 1.2rem;
+}
+
+.form-group-container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form-input::placeholder,
+.form-textarea:focus-visible {
+  color: #6b7280;
+}
+
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+  outline: 2px solid;
+  outline-offset: 2px;
+}
+
+.form-textarea {
+  min-height: 120px;
+}
+
+.form-submit {
+  margin: auto;
+  margin-top: 1rem;
+  width: 50%;
+  color: #fff;
+  padding: 13px 5px;
+}
