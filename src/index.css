@@ -136,7 +136,7 @@
     width: 100%;
     height: 90vh;
     display: block; 
-    background-image: url("public/bernd-dittrich unsplash 02.png");
+    background-image: url("/bernd-dittrich unsplash 02.png");
     background-size: 100%;
     display: flex;
     flex-direction: column;
@@ -282,6 +282,7 @@
 @media (max-width: 767.98px) {
   .testimonial {
     width: 80%;
+    height: 90%;
   }
   .testimonial p {
     font-size: 1.5rem;
@@ -293,7 +294,7 @@
   width: 100%;
   height: 90vh;
   display: block; 
-  background-image: url("public/josh-wilburne unsplash.png");
+  background-image: url("/josh-wilburne unsplash.png");
   background-size: 100%;
   display: flex;
   flex-direction: column;
